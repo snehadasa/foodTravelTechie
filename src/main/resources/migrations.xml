@@ -1,0 +1,79 @@
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+    <changeSet id="1" author="Sneha">
+        <createTable tableName="people">
+            <column name="people_id" type="bigint" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="name" type="varchar(256)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="email_id" type="varchar(256)"/>
+            <column name="phone_number" type="bigint"/>
+            <column name="created_at" type="timestamp"/>
+            <column name="updated_at" type="timestamp"/>
+        </createTable>
+
+        <createTable tableName="recipies">
+            <column name="recipe_id" type="bigint" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="name" type="varchar(256)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="description" type="varchar(256)"/>
+            <column name="instructions" type="varchar(8000)"/>
+            <column name="created_at" type="timestamp"/>
+            <column name="updated_at" type="timestamp"/>
+        </createTable>
+
+        <createTable tableName="ingredients">
+            <column name="ingredient_id" type="bigint" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="name" type="varchar(256)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="created_at" type="timestamp"/>
+            <column name="updated_at" type="timestamp"/>
+        </createTable>
+
+        <createTable tableName="recipe_ingredient_mapping">
+            <column name="recipe_ingredient_id" type="bigint" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="recipe_id" type="bigint"/>
+            <column name="ingredient_id" type="bigint"/>
+            <column name="grams" type="bigint"/>
+            <column name="ml" type="bigint"/>
+            <column name="created_at" type="timestamp"/>
+            <column name="updated_at" type="timestamp"/>
+        </createTable>
+
+        <createIndex
+                tableName="recipe_ingredient_mapping"
+                unique="false" indexName="recipe_ingredient_id_index">
+            <column name="recipe_id"/>
+        </createIndex>
+
+        <createTable tableName="people_recipe_mapping">
+            <column name="people_recipe_id" type="bigint" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="people_id" type="bigint"/>
+            <column name="recipe_id" type="bigint"/>
+            <column name="created_at" type="timestamp"/>
+            <column name="updated_at" type="timestamp"/>
+        </createTable>
+
+        <createIndex
+                tableName="people_recipe_mapping"
+                unique="false" indexName="people_recipe_id_index">
+            <column name="people_id"/>
+        </createIndex>
+    </changeSet>
+</databaseChangeLog>

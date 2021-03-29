@@ -1,0 +1,17 @@
+/Users/snehadasa/IdeaProjects/FoodTravelTechie/src/main/java/com/foodTravelTechie/core/Measure.java
+/Users/snehadasa/IdeaProjects/FoodTravelTechie/src/main/java/com/foodTravelTechie/core/RecipeIngredientMapping.java
+/Users/snehadasa/IdeaProjects/FoodTravelTechie/src/main/java/com/foodTravelTechie/resources/IngredientsResource.java
+/Users/snehadasa/IdeaProjects/FoodTravelTechie/src/main/java/com/foodTravelTechie/db/IngredientsDao.java
+/Users/snehadasa/IdeaProjects/FoodTravelTechie/src/main/java/com/foodTravelTechie/resources/RecipeIngredientMappingResource.java
+/Users/snehadasa/IdeaProjects/FoodTravelTechie/src/main/java/com/foodTravelTechie/FoodTravelTechieApplication.java
+/Users/snehadasa/IdeaProjects/FoodTravelTechie/src/main/java/com/foodTravelTechie/resources/RecipiesResource.java
+/Users/snehadasa/IdeaProjects/FoodTravelTechie/src/main/java/com/foodTravelTechie/db/RecipeIngredientMappingDao.java
+/Users/snehadasa/IdeaProjects/FoodTravelTechie/src/main/java/com/foodTravelTechie/core/Recipies.java
+/Users/snehadasa/IdeaProjects/FoodTravelTechie/src/main/java/com/foodTravelTechie/core/Ingredients.java
+/Users/snehadasa/IdeaProjects/FoodTravelTechie/src/main/java/com/foodTravelTechie/db/PeopleDao.java
+/Users/snehadasa/IdeaProjects/FoodTravelTechie/src/main/java/com/foodTravelTechie/core/People.java
+/Users/snehadasa/IdeaProjects/FoodTravelTechie/src/main/java/com/foodTravelTechie/FoodTravelTechieConfiguration.java
+/Users/snehadasa/IdeaProjects/FoodTravelTechie/src/main/java/com/foodTravelTechie/resources/PeopleResource.java
+/Users/snehadasa/IdeaProjects/FoodTravelTechie/src/main/java/com/foodTravelTechie/db/MeasureDao.java
+/Users/snehadasa/IdeaProjects/FoodTravelTechie/src/main/java/com/foodTravelTechie/db/RecipiesDao.java
+/Users/snehadasa/IdeaProjects/FoodTravelTechie/src/main/java/com/foodTravelTechie/resources/MeasureResource.java
